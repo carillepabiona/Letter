@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>For You, Always</title>
+<meta name="description" content="A letter, sealed and waiting to be read." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Dancing+Script:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ambient background layer, shared by both scenes -->
+<div class="sky" aria-hidden="true">
+  <div class="glow"></div>
+  <div class="fireflies" id="fireflies"></div>
+</div>
+
+<!-- ================= SCENE 1 : ENVELOPE ================= -->
+<main class="scene scene--envelope" id="scene-envelope">
+  <p class="eyebrow">a letter, sealed just for you</p>
+
+  <div class="envelope" id="envelope">
+    <div class="envelope__peek">
+      <p class="peek__label">read me first</p>
+    </div>
+    <div class="envelope__body">
+      <span class="envelope__address">For My Love</span>
+    </div>
+    <div class="envelope__flap"></div>
+    <button class="seal" id="seal" aria-label="Break the seal and open the letter">
+      <span class="seal__half seal__half--left"></span>
+      <span class="seal__half seal__half--right"></span>
+      <svg class="seal__heart" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 21s-7.5-4.6-10.2-9.3C0.2 8.9 1.4 5 5 4.2c2.2-0.5 4.1 0.6 5 2.4 0.9-1.8 2.8-2.9 5-2.4 3.6 0.8 4.8 4.7 3.2 7.5C19.5 16.4 12 21 12 21z"/>
+      </svg>
+    </button>
+  </div>
+
+  <p class="hint">tap the seal to open</p>
+</main>
+
+<!-- ================= SCENE 2 : LETTER ================= -->
+<section class="scene scene--letter" id="scene-letter" aria-hidden="true">
+
+  <header class="letter-topbar">
+    <button class="icon-btn" id="backBtn" aria-label="Seal the letter again">
+      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+      <span>close</span>
+    </button>
+    <p class="letter-topbar__title">a letter for you</p>
+    <span class="icon-btn icon-btn--ghost" aria-hidden="true"></span>
+  </header>
+
+  <article class="paper" id="paper">
+    <p class="paper__date" id="today-date"></p>
+
+    <div class="paper__body" id="letterBody">
+      <p data-p="0">Hi love, I'm writing this letter for you to let you know that I'm here, I know may possible plans ka kasi last day ni Marj and I don't want to interrupt your work. That's why I asked Marj for a favor ng saglitan lang hehe. I just wanna give this flower to you, this letter kasi feeling ko hindi ako makakapagsalita sa harap mo and of course to see you again kahit saglit. </p>
+
+      <p data-p="1">Alam ko we're not totally okay right now. I somehow don't know what to do for you to feel that I sincerely regret my actions nung Tuesday. I may not know if this letter is enough, or if surprising you right now sa work mo will work, knowing na pagod ka. I don't know when you will read this or how I will tell you to read this letter first without making you remember what I did, but I'll take the risk.</p>
+
+      <p data-p="2">I just really want to make things right. I don't want to spend another day without you, without us talking, without us being not okay. I made a mistake, I know, and I'm sorry. I'm never going to get tired of saying how sorry I am sa nagawa ko at sa mga naparamdam ko sa'yo. I'm so immature for not thinking of you.</p>
+
+      <p data-p="3" class="paper__whisper">And I love you. I love you so much, and I'm missing you so damn much, baby.</p>
+
+      <p data-p="4">I know I was immature, selfish, and insensitive. I let my emotions get the best of me instead of stopping for a second and thinking about how my actions would affect you. I know I hurt you, and that's the last thing I ever wanted to do. You never deserved any of it.</p>
+
+      <p data-p="5">Hindi ko gustong humingi lang ng sorry para matapos na 'to. Gusto kong humingi ng sorry because I genuinely know I was wrong. I understand if you're still hurt, if you're still disappointed, or if you still need time. I won't force you to forgive me agad because I know trust and healing don't happen agad-agad.</p>
+
+      <p data-p="6">I just want you to know that I'm willing to do whatever it takes to earn your trust again. Hindi lang sa words, kundi sa actions. I want to be better for you, for us, and for the relationship we're trying to build together. Ayokong maulit 'yung nangyari because seeing you hurt because of me hurts me too.</p>
+
+      <p data-p="7">Thank you for loving me despite my flaws. Thank you for being patient with me even during the times I make it difficult. I know I don't always show it the right way, but I appreciate every little thing you do for me. You deserve someone who makes you feel safe, loved, and valued every single day, and I want to become that person.</p>
+
+      <p data-p="8">I'm not asking you to forget what happened. I'm only asking for a chance to prove that I can learn from this and be better. I don't want this mistake to define us. I still believe in us because what we have is worth fighting for.</p>
+
+      <p data-p="9">I miss your voice. I miss your laugh. I miss talking to you. I miss calling you "baby" without feeling this distance between us. I just miss us.</p>
+
+      <p data-p="10">Always remember that I love you so much love, and I'm always here for you, waiting for you, and missing you</p>
+
+      <p data-p="11"> I'm sorry baby. Truly, sincerely, and wholeheartedly.</p>
+
+      <p class="paper__sign" data-p="12">Dito lang ako sa primero hehe.</p>
+    </div>
+  </article>
+
+  <p class="speech-note" id="speechNote" hidden>your browser can't read aloud &mdash; but every word is still here for you.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
